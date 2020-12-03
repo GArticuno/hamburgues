@@ -5,6 +5,7 @@ import { MaterialCommunityIcons} from '@expo/vector-icons';
 import { NavigationContainer} from '@react-navigation/native';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import { DefaultTheme, Provider as PaperProvider} from 'react-native-paper';
+import MainTab from './navigation/MainTabScreen'
 
 const theme={
   ...DefaultTheme,
@@ -19,12 +20,6 @@ const theme={
 };
 
 const Drawer = createDrawerNavigator();
-
-function MainTab({navigation}){
-  return(
-    <Text>Em construção</Text>
-  );
-}
 
 export default function App() {
   return (
