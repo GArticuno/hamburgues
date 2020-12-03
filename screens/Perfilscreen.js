@@ -27,7 +27,6 @@ export default function Perfilscreen(){
               disabled={true}
               selectionColor='#9c5ec3'
               underlineColor='#9c5ec3'
-              value={nome}
               />
             </View>
             <View style={styles.margem}>
@@ -39,7 +38,6 @@ export default function Perfilscreen(){
               underlineColor='#9c5ec3'
               keyboardType='numeric'
               maxLength= {2}
-              value={idade}
               />
             </View>
             <View style={styles.margem}>
@@ -50,7 +48,6 @@ export default function Perfilscreen(){
                 disabled={true}
                 selectionColor='#9c5ec3'
                 underlineColor='#9c5ec3'
-                value={sexo}
                 />
             </View>
             <View style={styles.margem}>
@@ -60,7 +57,6 @@ export default function Perfilscreen(){
               disabled={true}
               selectionColor='#9c5ec3'
               underlineColor='#9c5ec3'
-              value={email}
               />
             </View>
           </View>

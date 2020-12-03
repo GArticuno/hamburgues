@@ -127,13 +127,6 @@ const PerfilStackScreen = ({navigation}) => (
             onPress={()=>{navigation.openDrawer()}}
             />)
       }}/>
-      <CardapioStack.Screen
-      name='Medidor'
-      options={{
-        title:'Seu Medidor',
-      }}
-      component={Medidor}
-      />
     </CardapioStack.Navigator>
   );
   
