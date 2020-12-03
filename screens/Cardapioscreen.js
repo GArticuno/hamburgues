@@ -1,7 +1,8 @@
 import React, {Component} from "react";
-import {SafeAreaView, Text, FlatList, TouchableOpacity, StatusBar} from "react-native";
+import {SafeAreaView, View, Text, FlatList, TouchableOpacity, StatusBar} from "react-native";
 import {DefaultTheme,Card, Title, Paragraph, Button, Provider as PaperProvider, Searchbar} from 'react-native-paper';
-import styles from '../assets/styles/Bioma';
+import { AntDesign} from '@expo/vector-icons';
+import styles from '../assets/styles/Cardapio';
 import menu from '../assets/json/cardapio.json'
 
 const DATA = menu;
@@ -44,8 +45,7 @@ export default class App extends Component{
 
   searchFilterFunction = text => {    
     const newData = this.arrayholder.filter(item => {      
-      const itemData = `${item.nome.toUpperCase()}   
-      ${item.subnome.toUpperCase()}`;
+      const itemData = `${item.nome.toUpperCase()}`;
       
        const textData = text.toUpperCase();
         
@@ -74,8 +74,15 @@ export default class App extends Component{
           <Title style={styles.title}>{item.nome}</Title>
               <Paragraph style={styles.paragrafo}></Paragraph>
             </Card.Content>
-            <Card.Cover />
+            <Card.Cover source={require('../assets/icon.png')}/>
+            <Card.Content>
+              <View>
+              <Text style={styles.txt}>picles extra</Text>
+              <Button><AntDesign name={'shoppingcart'} size={30} color={"#fff"} /></Button>
+              </View>
+            </Card.Content>
           </Card>
+          
           </PaperProvider>);}}
         keyExtractor={(item) => item}
         ListHeaderComponent={this.renderHeader}

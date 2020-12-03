@@ -7,8 +7,9 @@ export default StyleSheet.create({
     item: {
       backgroundColor:'#2e7d32'
     },
-    txtbtn:{
-      color:'#fff'
+    txt:{
+      color:'#fff',
+      fontSize:17,
     },
     paragrafo:{
       fontStyle:'italic',
@@ -17,13 +18,11 @@ export default StyleSheet.create({
       fontSize: 25,
     },
     card:{
-      backgroundColor:'#66bb6a',
+      backgroundColor:'#242424',
       margin:10
     },
     procura:{
-      backgroundColor:'#66bb6a',
+      backgroundColor:'#242424',
       borderRadius:0
-    },
-    botaoprocura:{
     },
   });

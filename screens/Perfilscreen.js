@@ -1,33 +1,15 @@
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import React from 'react';
 import { StyleSheet, View, Text} from 'react-native';
-import {TextInput, DefaultTheme, Provider as PaperProvider} from 'react-native-paper';
-
-const theme={
-  ...DefaultTheme,
-  colors:{
-    ...DefaultTheme.colors,
-    primary:'#9c27b0',
-    accent:'#ce93d8',
-    background:'#f3e5f5',
-    text:'#4a148c',
-    disable:'#eeeeee',
-  },
-};
+import {TextInput, Avatar} from 'react-native-paper';
 
 export default function Perfilscreen(){
   return(
-      <PaperProvider theme={theme}>
         <View style={styles.container}>
           <View>
-            <View style={styles.margem}>
-              <Text style={styles.texto}>Nome:</Text>
-              <TextInput style={[styles.textinput, {width:270}]} 
-              mode='flat'
-              disabled={true}
-              selectionColor='#9c5ec3'
-              underlineColor='#9c5ec3'
-              />
+            <Avatar.Image size={130} style={styles.avatar}/>
+            <View style={styles.nomeCentro}>
+              <Text style={styles.texto}>Mateus Santos</Text>
             </View>
             <View style={styles.margem}>
               <Text style={styles.texto}>Idade:</Text>
@@ -61,14 +43,13 @@ export default function Perfilscreen(){
             </View>
           </View>
         </View>
-    </PaperProvider>
   );
 }
 
 const styles=StyleSheet.create({
   container:{
     flex:1,
-    backgroundColor:'#c09cff',
+    backgroundColor:'#f5f5f5',
   },
   margem:{
     flexDirection:'row',
@@ -84,10 +65,17 @@ const styles=StyleSheet.create({
     top:10,
   },
   texto:{
-    color:'#f5f5f5',
+    color:'#000',
     height:30,
     alignSelf:'center',
     fontSize:17,
     top:10,
+  },
+  avatar:{
+    alignSelf:'center',
+    marginTop:10,
+  },
+  nomeCentro:{
+    alignSelf:'center',
   },
 });

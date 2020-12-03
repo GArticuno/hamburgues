@@ -37,16 +37,17 @@ export default function MainTab(){
             
           }}
         >
+        
+
         <Tab.Screen 
-          name="Perfil" 
-          component={PerfilStackScreen}
+          name="Carrinho" 
+          component={CarrinhoStackScreen} 
           options={{
-            tabBarLabel:'Perfil',
+            tabBarLabel:'Carrinho',
             tabBarIcon:({color}) =>(
-              <MaterialCommunityIcons name={'account'} size={25} color={color} />
+              <AntDesign name={'shoppingcart'} size={25} color={color} />
             ),
-          }}
-          />
+          }}/>
         <Tab.Screen 
           name="Cardapio" 
           component={CardapioStackScreen} 
@@ -57,15 +58,14 @@ export default function MainTab(){
             ),
           }}/>
         <Tab.Screen 
-          name="Carrinho" 
-          component={CarrinhoStackScreen} 
+          name="Perfil" 
+          component={PerfilStackScreen}
           options={{
-            tabBarLabel:'Carrinho',
+            tabBarLabel:'Perfil',
             tabBarIcon:({color}) =>(
-              <AntDesign name={'shoppingcart'} size={25} color={color} />
+              <MaterialCommunityIcons name={'account'} size={25} color={color} />
             ),
           }}/>
-          
         </Tab.Navigator>
         </PaperProvider>
     );
@@ -89,7 +89,7 @@ const PerfilStackScreen = ({navigation}) => (
         backgroundColor:'#242424',
           headerLeft: () =>(
             <MaterialCommunityIcons
-            style={{marginRight:10}}
+            style={{paddingLeft:10}}
             name='menu'
             size={25}
             backgroundColor='#673ab7'
@@ -119,7 +119,7 @@ const PerfilStackScreen = ({navigation}) => (
         backgroundColor:'#673ab7',
         headerLeft: () =>(
             <MaterialCommunityIcons
-            style={{marginRight:10}}
+            style={{paddingLeft:10}}
             name='menu'
             size={25}
             backgroundColor='#673ab7'
@@ -149,7 +149,7 @@ const PerfilStackScreen = ({navigation}) => (
         backgroundColor:'#673ab7',
         headerLeft: () =>(
             <MaterialCommunityIcons
-            style={{marginRight:10}}
+            style={{paddingLeft:10}}
             name='menu'
             size={25}
             backgroundColor='#673ab7'
