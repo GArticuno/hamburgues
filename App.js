@@ -20,7 +20,7 @@ const theme={
 
 const Drawer = createDrawerNavigator();
 
-function MainTab(){
+function MainTab({navigation}){
   return(
     <Text>Em construção</Text>
   );
@@ -31,7 +31,7 @@ export default function App() {
     <PaperProvider theme={theme}>
     <StatusBar backgroundColor='#000' style="light"/>
     <NavigationContainer>
-      <Drawer.Navigator
+      <Drawer.Navigator initialRouteName='Home'
       drawerContentOptions={{
         activeTintColor: '#ffffff',
         inactiveTintColor: '#cfcfcf',
@@ -39,7 +39,7 @@ export default function App() {
         activeBackgroundColor:'#7e57c2',
       }}
       >
-        <Drawer.Screen name='Home' componet={MainTab}/>
+        <Drawer.Screen name='Home' component={MainTab}/>
       </Drawer.Navigator>
     </NavigationContainer>
 </PaperProvider>
