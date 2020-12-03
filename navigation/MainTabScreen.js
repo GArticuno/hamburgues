@@ -16,7 +16,7 @@ const theme={
     ...DefaultTheme,
     colors:{
       ...DefaultTheme.colors,
-      primary:'#9c27b0',
+      primary:'#000000',
       accent:'#ce93d8',
       background:'#f3e5f5',
       text:'#4a148c',
@@ -30,10 +30,10 @@ export default function MainTab(){
         <Tab.Navigator
           initialRouteName="Cardapio"
           tabBarOptions={{
-            activeTintColor: '#ffffff',
-            inactiveTintColor: '#cfcfcf',
-            inactiveBackgroundColor:'#673ab7',
-            activeBackgroundColor:'#7e57c2',
+            activeTintColor: '#242424',
+            inactiveTintColor: '#fff',
+            inactiveBackgroundColor:'#242424',
+            activeBackgroundColor:'#fff',
             
           }}
         >
@@ -74,8 +74,8 @@ const PerfilStackScreen = ({navigation}) => (
     <PerfilStack.Navigator
       screenOptions={{
         headerStyle:{
-          backgroundColor:'#673ab7',
-          shadowColor:'#673ab7',
+          backgroundColor:'#242424',
+          shadowColor:'#242424',
           elevation:0,
         },
         headerTintColor:'#fff',
@@ -86,7 +86,7 @@ const PerfilStackScreen = ({navigation}) => (
       component={Perfilscreen}
       options={{
         title:'',
-        backgroundColor:'#673ab7',
+        backgroundColor:'#242424',
           headerLeft: () =>(
             <MaterialCommunityIcons
             style={{marginRight:10}}
@@ -104,8 +104,8 @@ const PerfilStackScreen = ({navigation}) => (
     <CardapioStack.Navigator
       screenOptions={{
         headerStyle:{
-          backgroundColor:'#673ab7',
-          shadowColor:'#673ab7',
+          backgroundColor:'#242424',
+          shadowColor:'#242424',
           elevation:0,
         },
         headerTintColor:'#fff',
@@ -134,11 +134,11 @@ const PerfilStackScreen = ({navigation}) => (
     <CarrinhoStack.Navigator
       screenOptions={{
         headerStyle:{
-          backgroundColor:'#673ab7',
-          shadowColor:'#673ab7',
+          backgroundColor:'#242424',
+          shadowColor:'#242424',
           elevation:0,
         },
-        headerTintColor:'#000000',
+        headerTintColor:'#242424',
       }}
     >
       <CarrinhoStack.Screen 

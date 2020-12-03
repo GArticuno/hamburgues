@@ -24,7 +24,6 @@ const Drawer = createDrawerNavigator();
 export default function App() {
   return (
     <PaperProvider theme={theme}>
-    <StatusBar backgroundColor='#000' style="light"/>
     <NavigationContainer>
       <Drawer.Navigator initialRouteName='Home'
       drawerContentOptions={{

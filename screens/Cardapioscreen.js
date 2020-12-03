@@ -2,8 +2,9 @@ import React, {Component} from "react";
 import {SafeAreaView, Text, FlatList, TouchableOpacity, StatusBar} from "react-native";
 import {DefaultTheme,Card, Title, Paragraph, Button, Provider as PaperProvider, Searchbar} from 'react-native-paper';
 import styles from '../assets/styles/Bioma';
+import menu from '../assets/json/cardapio.json'
 
-const DATA = [];
+const DATA = menu;
 
 const theme={
   ...DefaultTheme,
@@ -41,25 +42,26 @@ export default class App extends Component{
     );
   };
 
-//   searchFilterFunction = text => {    
-//     const newData = this.arrayholder.filter(item => {      
-//       const itemData = `${item.nome.toUpperCase()}   
-//       ${item.subnome.toUpperCase()}`;
+  searchFilterFunction = text => {    
+    const newData = this.arrayholder.filter(item => {      
+      const itemData = `${item.nome.toUpperCase()}   
+      ${item.subnome.toUpperCase()}`;
       
-//        const textData = text.toUpperCase();
+       const textData = text.toUpperCase();
         
-//        return itemData.indexOf(textData) > -1;    
-//     });
+       return itemData.indexOf(textData) > -1;    
+    });
     
-//     this.setState({ data: newData });  
-//   };
+    this.setState({ data: newData });  
+  };
 
   render(){
 
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar 
-      barStyle='dark-content'
+      <StatusBar
+      backgroundColor='#242424' 
+      barStyle='light'
       />
       <FlatList
         data={this.state.data}
@@ -69,7 +71,7 @@ export default class App extends Component{
           <Card style={styles.card}>
             <Card.Title/>
             <Card.Content>
-              <Title style={styles.title}></Title>
+          <Title style={styles.title}>{item.nome}</Title>
               <Paragraph style={styles.paragrafo}></Paragraph>
             </Card.Content>
             <Card.Cover />
