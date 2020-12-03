@@ -1,13 +1,48 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { MaterialCommunityIcons} from '@expo/vector-icons';
+import { NavigationContainer} from '@react-navigation/native';
+import {createDrawerNavigator} from '@react-navigation/drawer';
+import { DefaultTheme, Provider as PaperProvider} from 'react-native-paper';
+
+const theme={
+  ...DefaultTheme,
+  colors:{
+    ...DefaultTheme.colors,
+    primary:'#9c27b0',
+    accent:'#ce93d8',
+    background:'#f3e5f5',
+    text:'#4a148c',
+    disable:'#eeeeee',
+  },
+};
+
+const Drawer = createDrawerNavigator();
+
+function MainTab(){
+  return(
+    <Text>Em construção</Text>
+  );
+}
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <PaperProvider theme={theme}>
+    <StatusBar backgroundColor='#000' style="light"/>
+    <NavigationContainer>
+      <Drawer.Navigator
+      drawerContentOptions={{
+        activeTintColor: '#ffffff',
+        inactiveTintColor: '#cfcfcf',
+        inactiveBackgroundColor:'#673ab7',
+        activeBackgroundColor:'#7e57c2',
+      }}
+      >
+        <Drawer.Screen name='Home' componet={MainTab}/>
+      </Drawer.Navigator>
+    </NavigationContainer>
+</PaperProvider>
   );
 }
 
