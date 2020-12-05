@@ -22,25 +22,6 @@ export default function Perfilscreen(){
               maxLength= {2}
               />
             </View>
-            <View style={styles.margem}>
-              <Text style={styles.texto}>Sexo:</Text>
-                <TextInput
-                style={[styles.textinput, {width:150}]}
-                mode='flat'
-                disabled={true}
-                selectionColor='#9c5ec3'
-                underlineColor='#9c5ec3'
-                />
-            </View>
-            <View style={styles.margem}>
-              <Text style={styles.texto}>Email:</Text>
-              <TextInput style={[styles.textinput, {width:270}]}
-              mode='flat'
-              disabled={true}
-              selectionColor='#9c5ec3'
-              underlineColor='#9c5ec3'
-              />
-            </View>
           </View>
         </View>
   );
