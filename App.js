@@ -32,9 +32,16 @@ export default function App() {
         activeBackgroundColor:'#fff',
       }}
       >
-        <Drawer.Screen name='Home' component={MainTab}/>
+        <Drawer.Screen name='Home' component={MainTab}
+        options={{
+          title:'Home',
+          drawerIcon:()=>{
+            <MaterialCommunityIcons name='home' size={25}/>
+          }
+        }}
+        />
         <Drawer.Screen name='FAQ' component={MainTab}/>
-        
+
       </Drawer.Navigator>
     </NavigationContainer>
 </PaperProvider>

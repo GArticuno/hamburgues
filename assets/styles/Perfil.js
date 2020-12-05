@@ -3,20 +3,10 @@ import {StyleSheet} from "react-native";
 export default StyleSheet.create({
     container:{
       flex:1,
-      backgroundColor:'#f5f5f5',
+      backgroundColor:'#fff',
     },
     margem:{
       flexDirection:'row',
-      marginHorizontal:10,
-      marginTop:30,
-    },
-    textinput:{
-      marginLeft:10,
-      color:'#d2b8ff',
-      backgroundColor:'#ffffff',
-      height:35,
-      fontSize:18,
-      top:10,
     },
     texto:{
       color:'#000',
@@ -32,4 +22,12 @@ export default StyleSheet.create({
     nomeCentro:{
       alignSelf:'center',
     },
+    textoN:{
+        fontSize:16,
+        fontFamily:''
+    },
+    viewCard:{
+        backgroundColor:'#f5f5f5',
+        borderRadius:5,
+    }
   });
