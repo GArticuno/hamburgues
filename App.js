@@ -26,13 +26,15 @@ export default function App() {
     <NavigationContainer>
       <Drawer.Navigator initialRouteName='Home'
       drawerContentOptions={{
-        activeTintColor: '#ffffff',
-        inactiveTintColor: '#cfcfcf',
-        inactiveBackgroundColor:'#673ab7',
-        activeBackgroundColor:'#7e57c2',
+        activeTintColor: '#000',
+        inactiveTintColor: '#fff',
+        inactiveBackgroundColor:'#000',
+        activeBackgroundColor:'#fff',
       }}
       >
         <Drawer.Screen name='Home' component={MainTab}/>
+        <Drawer.Screen name='FAQ' component={MainTab}/>
+        
       </Drawer.Navigator>
     </NavigationContainer>
 </PaperProvider>
