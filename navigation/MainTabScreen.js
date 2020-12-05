@@ -41,7 +41,7 @@ export default function MainTab(){
 
         <Tab.Screen 
           name="Carrinho" 
-          component={CarrinhoStackScreen} 
+          component={CarrinhoScreen} 
           options={{
             tabBarLabel:'Carrinho',
             tabBarIcon:({color}) =>(
@@ -50,7 +50,7 @@ export default function MainTab(){
           }}/>
         <Tab.Screen 
           name="Cardapio" 
-          component={CardapioStackScreen} 
+          component={CardapioScreen} 
           options={{
             tabBarLabel:'Cardápio',
             tabBarIcon:({color}) =>(
@@ -59,7 +59,7 @@ export default function MainTab(){
           }}/>
         <Tab.Screen 
           name="Perfil" 
-          component={PerfilStackScreen}
+          component={PerfilScreen}
           options={{
             tabBarLabel:'Perfil',
             tabBarIcon:({color}) =>(
@@ -70,92 +70,92 @@ export default function MainTab(){
         </PaperProvider>
     );
 }
-const PerfilStackScreen = ({navigation}) => (
-    <PerfilStack.Navigator
-      screenOptions={{
-        headerStyle:{
-          backgroundColor:'#242424',
-          shadowColor:'#242424',
-          elevation:0,
-        },
-        headerTintColor:'#fff',
-      }}
-    >
-      <PerfilStack.Screen 
-      name='Perfil' 
-      component={Perfilscreen}
-      options={{
-        title:'',
-        backgroundColor:'#242424',
-          headerLeft: () =>(
-            <MaterialCommunityIcons
-            style={{paddingLeft:10}}
-            name='menu'
-            size={25}
-            backgroundColor='#673ab7'
-            color='#fff'
-            onPress={()=>{navigation.openDrawer()}}
-            />)
-      }}/>
-    </PerfilStack.Navigator>
-  );
+// const PerfilStackScreen = ({navigation}) => (
+//     <PerfilStack.Navigator
+//       screenOptions={{
+//         headerStyle:{
+//           backgroundColor:'#242424',
+//           shadowColor:'#242424',
+//           elevation:0,
+//         },
+//         headerTintColor:'#fff',
+//       }}
+//     >
+//       <PerfilStack.Screen 
+//       name='Perfil' 
+//       component={Perfilscreen}
+//       options={{
+//         title:'',
+//         backgroundColor:'#242424',
+//           headerLeft: () =>(
+//             <MaterialCommunityIcons
+//             style={{paddingLeft:10}}
+//             name='menu'
+//             size={25}
+//             backgroundColor='#673ab7'
+//             color='#fff'
+//             onPress={()=>{navigation.openDrawer()}}
+//             />)
+//       }}/>
+//     </PerfilStack.Navigator>
+//   );
   
-  const CardapioStackScreen = ({navigation}) => (
-    <CardapioStack.Navigator
-      screenOptions={{
-        headerStyle:{
-          backgroundColor:'#242424',
-          shadowColor:'#242424',
-          elevation:0,
-        },
-        headerTintColor:'#fff',
-      }}
-    >
-      <CardapioStack.Screen 
-      name='Cardapio' 
-      component={Cardapioscreen}
-      options={{
-        title:'',
-        backgroundColor:'#673ab7',
-        headerLeft: () =>(
-            <MaterialCommunityIcons
-            style={{paddingLeft:10}}
-            name='menu'
-            size={25}
-            backgroundColor='#673ab7'
-            color='#fff'
-            onPress={()=>{navigation.openDrawer()}}
-            />)
-      }}/>
-    </CardapioStack.Navigator>
-  );
+//   const CardapioStackScreen = ({navigation}) => (
+//     <CardapioStack.Navigator
+//       screenOptions={{
+//         headerStyle:{
+//           backgroundColor:'#242424',
+//           shadowColor:'#242424',
+//           elevation:0,
+//         },
+//         headerTintColor:'#fff',
+//       }}
+//     >
+//       <CardapioStack.Screen 
+//       name='Cardapio' 
+//       component={Cardapioscreen}
+//       options={{
+//         title:'',
+//         backgroundColor:'#673ab7',
+//         headerLeft: () =>(
+//             <MaterialCommunityIcons
+//             style={{paddingLeft:10}}
+//             name='menu'
+//             size={25}
+//             backgroundColor='#673ab7'
+//             color='#fff'
+//             onPress={()=>{navigation.openDrawer()}}
+//             />)
+//       }}/>
+//     </CardapioStack.Navigator>
+//   );
   
-  const CarrinhoStackScreen = ({navigation}) => (
-    <CarrinhoStack.Navigator
-      screenOptions={{
-        headerStyle:{
-          backgroundColor:'#242424',
-          shadowColor:'#242424',
-          elevation:0,
-        },
-        headerTintColor:'#242424',
-      }}
-    >
-      <CarrinhoStack.Screen 
-      name='Carrinho' 
-      component={Carrinhoscreen}
-      options={{
-        title:'',
-        backgroundColor:'#673ab7',
-        headerLeft: () =>(
-            <MaterialCommunityIcons
-            style={{paddingLeft:10}}
-            name='menu'
-            size={25}
-            backgroundColor='#673ab7'
-            color='#fff'
-            onPress={()=>{navigation.openDrawer()}}
-            />)
-      }}/>
-    </CarrinhoStack.Navigator>
-  );
+//   const CarrinhoStackScreen = ({navigation}) => (
+    // <CarrinhoStack.Navigator
+    //   screenOptions={{
+    //     headerStyle:{
+    //       backgroundColor:'#242424',
+    //       shadowColor:'#242424',
+    //       elevation:0,
+    //     },
+    //     headerTintColor:'#242424',
+    //   }}
+    // >
+    //   <CarrinhoStack.Screen 
+    //   name='Carrinho' 
+    //   component={Carrinhoscreen}
+    //   options={{
+    //     title:'',
+    //     backgroundColor:'#673ab7',
+    //     headerLeft: () =>(
+    //         <MaterialCommunityIcons
+    //         style={{paddingLeft:10}}
+    //         name='menu'
+    //         size={25}
+    //         backgroundColor='#673ab7'
+    //         color='#fff'
+    //         onPress={()=>{navigation.openDrawer()}}
+    //         />)
+    //   }}/>
+    // </CarrinhoStack.Navigator>
+  // );

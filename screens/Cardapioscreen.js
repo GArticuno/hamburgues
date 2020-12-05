@@ -72,13 +72,13 @@ export default class App extends Component{
             <Card.Title/>
             <Card.Content>
           <Title style={styles.title}>{item.nome}</Title>
-              <Paragraph style={styles.paragrafo}></Paragraph>
+          <Paragraph style={styles.paragrafo}>{item.direito}</Paragraph>
             </Card.Content>
-            <Card.Cover source={require('../assets/icon.png')}/>
+            <Card.Cover source={item.foto}/>
             <Card.Content>
               <View>
-              <Text style={styles.txt}>picles extra</Text>
-              <Button><AntDesign name={'shoppingcart'} size={30} color={"#fff"} /></Button>
+          <Text style={styles.txt}>{item.ingredientes}</Text>
+              <Button><AntDesign name={'shoppingcart'} size={30} color="#fff" /></Button>
               </View>
             </Card.Content>
           </Card>

@@ -1,9 +1,9 @@
 [
     {
-        "nome":"Dom Corleone",
-        "preco":"15,90",
-        "ingredientes":"",
-        "foto":"",
-        "direito":""
+        "nome":"Burguesinhas",
+        "preco":"10,90",
+        "ingredientes":"Massa de baunilha com cobertura de morango e confeitos coloridos.",
+        "foto":"require('../assets/img/fresh-tasty-donuts-with-glaze.jpg')",
+        "direito":"Alimento foto criado por Racool_studio - br.freepik.com"
     }
 ]
