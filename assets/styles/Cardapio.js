@@ -4,9 +4,6 @@ export default StyleSheet.create({
     container: {
       flex: 1,
     },
-    item: {
-      backgroundColor:'#2e7d32'
-    },
     txt:{
       color:'#fff',
       fontSize:17,
@@ -28,5 +25,12 @@ export default StyleSheet.create({
     viewdesc:{
       flexDirection:'row',
       width:263
+    },
+    viewpreco:{
+      flexDirection:'row',
+      width:250
+    },
+    txtpreco:{
+      fontSize:17,
     }
   });

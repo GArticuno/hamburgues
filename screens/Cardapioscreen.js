@@ -17,13 +17,16 @@ const theme={
   },
 };
 
+
+
 export default class App extends Component{
 
   constructor(props) {
     super(props);
 
     this.state = {
-      data: menu
+      data: menu,
+      pedido: false
     };
     this.arrayholder = menu;
   }
@@ -69,14 +72,18 @@ export default class App extends Component{
           <Card style={styles.card}>
             <Card.Title/>
             <Card.Content>
-          <Title style={styles.title}>{item.nome}</Title>
-          <Paragraph style={styles.paragrafo}>{item.direito}</Paragraph>
+            <Title style={styles.title}>{item.nome}</Title>
+            <View style={styles.viewdesc}>
+              <Paragraph style={styles.paragrafo}>{item.direito}</Paragraph>
+              <Paragraph style={styles.viewpreco}>{item.preco}</Paragraph>
+            </View>
             </Card.Content>
-            <Card.Cover source={item.foto}/>
+            <Card.Cover source={{uri : item.foto}}/>
             <Card.Content>
               <View style={styles.viewdesc}>
           <Text style={styles.txt}>{item.ingredientes}</Text>
-              <Button><AntDesign name={'shoppingcart'} size={30} color="#fff" /></Button>
+              <Button><AntDesign name={'shoppingcart'} size={30} color="#fff" 
+              /></Button>
               </View>
             </Card.Content>
           </Card>
