@@ -25,8 +25,7 @@ export default class App extends Component{
     super(props);
 
     this.state = {
-      data: menu,
-      pedido: false
+      data: menu
     };
     this.arrayholder = menu;
   }
@@ -56,6 +55,7 @@ export default class App extends Component{
     this.setState({ data: newData });  
   };
 
+
   render(){
 
   return (
@@ -73,16 +73,16 @@ export default class App extends Component{
             <Card.Title/>
             <Card.Content>
             <Title style={styles.title}>{item.nome}</Title>
-            <View style={styles.viewdesc}>
+            <View style={styles.viewpreco}>
               <Paragraph style={styles.paragrafo}>{item.direito}</Paragraph>
-              <Paragraph style={styles.viewpreco}>{item.preco}</Paragraph>
+              <Paragraph style={styles.txtpreco}>{item.preco}</Paragraph>
             </View>
             </Card.Content>
             <Card.Cover source={{uri : item.foto}}/>
             <Card.Content>
               <View style={styles.viewdesc}>
           <Text style={styles.txt}>{item.ingredientes}</Text>
-              <Button><AntDesign name={'shoppingcart'} size={30} color="#fff" 
+              <Button><AntDesign name={'shoppingcart'} size={30} color="#fff"
               /></Button>
               </View>
             </Card.Content>
