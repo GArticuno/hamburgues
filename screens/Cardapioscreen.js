@@ -3,10 +3,7 @@ import {SafeAreaView, View, Text, FlatList, TouchableOpacity, StatusBar} from "r
 import {DefaultTheme,Card, Title, Paragraph, Button, Provider as PaperProvider, Searchbar} from 'react-native-paper';
 import { AntDesign} from '@expo/vector-icons';
 import styles from '../assets/styles/Cardapio';
-import menu from '../assets/json/cardapio.json'
-import { Item } from "react-native-paper/lib/typescript/src/components/List/List";
-
-const DATA = menu;
+import menu from '../assets/json/cardapio.js'
 
 const theme={
   ...DefaultTheme,
@@ -26,9 +23,9 @@ export default class App extends Component{
     super(props);
 
     this.state = {
-      data: DATA
+      data: menu
     };
-    this.arrayholder = DATA;
+    this.arrayholder = menu;
   }
 
   renderHeader = () => {
@@ -75,9 +72,9 @@ export default class App extends Component{
           <Title style={styles.title}>{item.nome}</Title>
           <Paragraph style={styles.paragrafo}>{item.direito}</Paragraph>
             </Card.Content>
-            <Card.Cover source={require("../assets/img/ $ {item.foto}")}/>
+            <Card.Cover source={item.foto}/>
             <Card.Content>
-              <View>
+              <View style={styles.viewdesc}>
           <Text style={styles.txt}>{item.ingredientes}</Text>
               <Button><AntDesign name={'shoppingcart'} size={30} color="#fff" /></Button>
               </View>

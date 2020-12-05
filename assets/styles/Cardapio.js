@@ -25,4 +25,8 @@ export default StyleSheet.create({
       backgroundColor:'#242424',
       borderRadius:0
     },
+    viewdesc:{
+      flexDirection:'row',
+      width:263
+    }
   });

@@ -41,7 +41,7 @@ export default function MainTab(){
 
         <Tab.Screen 
           name="Carrinho" 
-          component={Carrinhoscreen} 
+          component={CarrinhoStackScreen} 
           options={{
             tabBarLabel:'Carrinho',
             tabBarIcon:({color}) =>(
@@ -50,7 +50,7 @@ export default function MainTab(){
           }}/>
         <Tab.Screen 
           name="Cardapio" 
-          component={Cardapioscreen} 
+          component={CardapioStackScreen} 
           options={{
             tabBarLabel:'Cardápio',
             tabBarIcon:({color}) =>(
@@ -59,7 +59,7 @@ export default function MainTab(){
           }}/>
         <Tab.Screen 
           name="Perfil" 
-          component={Perfilscreen}
+          component={PerfilStackScreen}
           options={{
             tabBarLabel:'Perfil',
             tabBarIcon:({color}) =>(
