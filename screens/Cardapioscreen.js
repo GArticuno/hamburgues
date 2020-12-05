@@ -4,6 +4,7 @@ import {DefaultTheme,Card, Title, Paragraph, Button, Provider as PaperProvider, 
 import { AntDesign} from '@expo/vector-icons';
 import styles from '../assets/styles/Cardapio';
 import menu from '../assets/json/cardapio.json'
+import { Item } from "react-native-paper/lib/typescript/src/components/List/List";
 
 const DATA = menu;
 
@@ -74,7 +75,7 @@ export default class App extends Component{
           <Title style={styles.title}>{item.nome}</Title>
           <Paragraph style={styles.paragrafo}>{item.direito}</Paragraph>
             </Card.Content>
-            <Card.Cover source={item.foto}/>
+            <Card.Cover source={require("../assets/img/ $ {item.foto}")}/>
             <Card.Content>
               <View>
           <Text style={styles.txt}>{item.ingredientes}</Text>
@@ -84,7 +85,7 @@ export default class App extends Component{
           </Card>
           
           </PaperProvider>);}}
-        keyExtractor={(item) => item}
+        keyExtractor={(item) => item.nome}
         ListHeaderComponent={this.renderHeader}
       />
     </SafeAreaView>
