@@ -1,60 +1,62 @@
-import { MaterialCommunityIcons, Entypo, MaterialIcons, AntDesign } from '@expo/vector-icons';
+import { MaterialCommunityIcons, Feather, AntDesign, FontAwesome, SimpleLineIcons, EvilIcons} from '@expo/vector-icons';
 import React from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
+import {View, Text, TouchableOpacity, ScrollView} from 'react-native';
 import { Avatar, Divider} from 'react-native-paper';
 import styles from '../assets/styles/Perfil';
 
 export default function Perfilscreen(){
   return(
+    <ScrollView style={{backgroundColor:'#fff'}}>
         <View style={styles.container}>
           <View style={styles.viewCard}>
-            <Avatar.Image size={130} style={styles.avatar}/>
+            <View style={styles.viewAvatar}>
+            <Avatar.Image size={180} style={styles.avatar}/>
             <View style={styles.nomeCentro}>
               <Text style={styles.texto}>Mateus Santos</Text>
             </View>
-              <View style={styles.margem}>
-                <TouchableOpacity>
-                  <Entypo name='bell' size={25}/>
-                  <Text>Notificações</Text>
-                </TouchableOpacity>
-              </View>
+            </View>
+            <Divider/>
+              <TouchableOpacity style={styles.margem}>
+                  <FontAwesome name='bell-o' size={25} style={styles.icone}/>
+                  <Text style={styles.textoN}>Notificações</Text>
+              </TouchableOpacity>
               <Divider/>
-              <View style={styles.margem}>
-                <TouchableOpacity>
-                  <Entypo name='wallet' size={25}/>
-                  <Text>Carteira</Text>
-                </TouchableOpacity>
-              </View>
+              <TouchableOpacity style={styles.margem}>
+                  <MaterialCommunityIcons name='wallet-outline' size={25} style={styles.icone}/>
+                  <Text style={styles.textoN}>Carteira</Text>
+              </TouchableOpacity>
               <Divider/>
-              <View style={styles.margem}>
-                <TouchableOpacity>
-                  <MaterialIcons name='favorite' size={25}/>
-                  <Text>Favoritos</Text>
+              <TouchableOpacity style={styles.margem}>
+                  <FontAwesome name='heart-o' size={25} style={styles.icone}/>
+                  <Text style={styles.textoN}>Favoritos</Text>
                 </TouchableOpacity>
-              </View>
               <Divider/>
-              <View style={styles.margem}>
-                <TouchableOpacity>
-                  <AntDesign name='creditcard' size={25}/>
-                  <Text>Cartões</Text>
+              <TouchableOpacity style={styles.margem}>
+                  <AntDesign name='creditcard' size={25} style={styles.icone}/>
+                  <Text style={styles.textoN}>Cartões</Text>
                 </TouchableOpacity>
-              </View>
               <Divider/>
-              <View style={styles.margem}>
-                <TouchableOpacity>
-                  <MaterialIcons name='location-on' size={25}/>
-                  <Text>Endereço</Text>
+              <TouchableOpacity style={styles.margem}>
+                  <SimpleLineIcons name='location-pin' size={25} style={styles.icone}/>
+                  <Text style={styles.textoN}>Endereço</Text>
                 </TouchableOpacity>
-              </View>
               <Divider/>
-              <View style={styles.margem}>
-                <TouchableOpacity>
-                  <MaterialCommunityIcons name='account-edit' size={25}/>
-                  <Text>Editar perfil</Text>
+              <TouchableOpacity style={styles.margem}>
+                  <Feather name='edit' size={25} style={styles.icone}/>
+                  <Text style={styles.textoN}>Editar perfil</Text>
                 </TouchableOpacity>
-              </View>
-              <Divider/>
+                <Divider/>
+              <TouchableOpacity style={styles.margem}>
+                  <EvilIcons name='gear' size={30} style={styles.icone}/>
+                  <Text style={styles.textoN}>Configurações</Text>
+                </TouchableOpacity>
+                <Divider/>
+              <TouchableOpacity style={styles.margem}>
+                  <AntDesign name='questioncircleo' size={25} style={styles.icone}/>
+                  <Text style={styles.textoN}>FAQ</Text>
+                </TouchableOpacity>
           </View>
         </View>
+    </ScrollView>
   );
 }

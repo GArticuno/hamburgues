@@ -61,7 +61,7 @@ export default class App extends Component{
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar
-      backgroundColor='#242424' 
+      backgroundColor='#000' 
       barStyle='light'
       />
       <FlatList

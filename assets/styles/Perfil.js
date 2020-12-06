@@ -2,11 +2,15 @@ import {StyleSheet} from "react-native";
 
 export default StyleSheet.create({
     container:{
-      flex:1,
-      backgroundColor:'#fff',
+      padding:20
     },
     margem:{
       flexDirection:'row',
+      height:50,
+      backgroundColor:'#f5f5f5',
+      borderRadius:5,
+      alignItems:'center',
+
     },
     texto:{
       color:'#000',
@@ -24,10 +28,17 @@ export default StyleSheet.create({
     },
     textoN:{
         fontSize:16,
-        fontFamily:''
+        paddingLeft:30
     },
     viewCard:{
-        backgroundColor:'#f5f5f5',
-        borderRadius:5,
-    }
+      borderWidth:2,
+      borderColor:'#000',
+    },
+    viewAvatar:{
+      backgroundColor:'#f5f5f5',
+      paddingBottom:40,
+    },
+    icone:{
+      paddingLeft: 20,
+    },
   });
