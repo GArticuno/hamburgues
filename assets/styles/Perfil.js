@@ -2,7 +2,7 @@ import {StyleSheet} from "react-native";
 
 export default StyleSheet.create({
     container:{
-      padding:20
+      padding:10
     },
     margem:{
       flexDirection:'row',
@@ -10,7 +10,6 @@ export default StyleSheet.create({
       backgroundColor:'#f5f5f5',
       borderRadius:5,
       alignItems:'center',
-
     },
     texto:{
       color:'#000',
@@ -28,7 +27,8 @@ export default StyleSheet.create({
     },
     textoN:{
         fontSize:16,
-        paddingLeft:30
+        paddingLeft:30,
+        color:'#000'
     },
     viewCard:{
       borderWidth:2,
@@ -40,5 +40,6 @@ export default StyleSheet.create({
     },
     icone:{
       paddingLeft: 20,
+      color:'#000'
     },
   });

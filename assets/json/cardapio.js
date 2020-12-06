@@ -44,7 +44,7 @@ const Menu=[
     {
         "nome":"fritas burguesas",
         "preco":"9,90",
-        "ingredientes":"Poção de batatas fritas.",
+        "ingredientes":"Poção de batatas fritas acompanhado com maionese verde.",
         "foto":'https://i.pinimg.com/originals/e6/33/25/e63325ee4b833815ee68e0181105fbea.jpg',
         "direito":"Fundo foto criado por topntp26 - br.freepik.com"
     }

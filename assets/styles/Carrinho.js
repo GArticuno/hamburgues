@@ -5,31 +5,24 @@ export default StyleSheet.create({
       flex: 1,
     },
     txt:{
-      color:'#fff',
+      color:'#000',
       fontSize:17,
-      alignSelf:'center'
     },
     paragrafo:{
       fontStyle:'italic',
-
     },
     title: {
       fontSize: 25,
-      bottom:30
+      bottom:30,
     },
     card:{
-      backgroundColor:'#242424',
+      backgroundColor:'#9e9e9e',
       margin:10
     },
-    procura:{
-      backgroundColor:'#242424',
-      borderRadius:0
-    },
     viewdesc:{
-      flexDirection:'row',
-      width:263,
-      justifyContent:'space-between',
-      alignItems:'center'
+      alignItems:'center',
+      paddingLeft:30,
+      width:263
     },
     viewpreco:{
       flexDirection:'row',
@@ -38,7 +31,5 @@ export default StyleSheet.create({
     },
     txtpreco:{
       fontSize:19,
-    },
-    icone:{
     }
   });
