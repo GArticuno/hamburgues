@@ -21,10 +21,6 @@ export default StyleSheet.create({
     avatar:{
       alignSelf:'center',
       marginTop:10,
-      borderColor:"#000",
-      borderWidth:2,
-      borderTopLeftRadius:1,
-      borderStyle:'solid'
     },
     nomeCentro:{
       alignSelf:'center',
