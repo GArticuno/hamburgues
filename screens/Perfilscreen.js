@@ -10,10 +10,10 @@ export default function Perfilscreen(){
         <View style={styles.container}>
           <View style={styles.viewCard}>
             <View style={styles.viewAvatar}>
-            <Avatar.Image size={150} style={styles.avatar} source={require('../assets/avatar.jpg')}/>
-            <View style={styles.nomeCentro}>
-              <Text style={styles.texto}>Garticuno</Text>
-            </View>
+              <Avatar.Image size={130} style={styles.avatar} source={require('../assets/avatar.jpg') }/>
+              <View style={styles.nomeCentro}>
+                <Text style={styles.texto}>Garticuno</Text>
+              </View>
             </View>
             <Divider/>
               <TouchableOpacity style={styles.margem}>
