@@ -3,4 +3,4 @@
  
  My app working.
 
-![Alt Text](https://garticuno.github.io/EcoTrip/Hamburgues.gif)
+link to the gif: https://media3.giphy.com/media/eKmpkRJPvTtxwtNRxX/giphy.gif
