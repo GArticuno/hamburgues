@@ -22,7 +22,8 @@
     "react-native-paper": "^4.4.1",
     "react-native-reanimated": "~1.13.0",
     "react-native-screens": "~2.10.1",
-    "react-native-web": "~0.13.12"
+    "react-native-web": "~0.13.12",
+    "ua-parser-js": "^0.7.24"
   },
   "devDependencies": {
     "@babel/core": "~7.9.0"
