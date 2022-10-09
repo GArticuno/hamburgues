@@ -1,19 +1,19 @@
 import React, {Component} from "react";
 import {SafeAreaView, View, Text, FlatList, TouchableOpacity, StatusBar} from "react-native";
-import {DefaultTheme,Card, Title, Paragraph, Button, Provider as PaperProvider, Searchbar} from 'react-native-paper';
-import { AntDesign} from '@expo/vector-icons';
-import styles from '../assets/styles/Cardapio';
-import menu from '../assets/json/cardapio.js';
+import {DefaultTheme,Card, Title, Paragraph, Button, Provider as PaperProvider, Searchbar} from "react-native-paper";
+import { AntDesign} from "@expo/vector-icons";
+import styles from "../assets/styles/Cardapio";
+import menu from "../assets/json/cardapio.js";
 
 const theme={
   ...DefaultTheme,
   colors:{
     ...DefaultTheme.colors,
-    primary:'#4caf50',
-    accent:'#66bb6a',
-    background:'#e8f5e9',
-    text:'#fff',
-    disable:'#eeeeee',
+    primary:"#4caf50",
+    accent:"#66bb6a",
+    background:"#e8f5e9",
+    text:"#fff",
+    disable:"#eeeeee",
   },
 };
 
@@ -35,7 +35,7 @@ export default class App extends Component{
       <PaperProvider theme={theme}>
         <Searchbar
         placeholder="Pesquise aqui..."
-        placeholderTextColor='#fff'
+        placeholderTextColor="#fff"
         onChangeText={text => this.searchFilterFunction(text)}
         style={styles.procura}
       />
@@ -61,8 +61,8 @@ export default class App extends Component{
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar
-      backgroundColor='#000' 
-      barStyle='light'
+      backgroundColor="#000" 
+      barStyle="light"
       />
       <FlatList
         data={this.state.data}
@@ -83,7 +83,7 @@ export default class App extends Component{
               <View style={styles.viewdesc}>
                 <Text style={styles.txt}>{item.ingredientes}</Text>
                 <Button style={styles.icone}>
-                  <AntDesign name={'shoppingcart'} size={30} color="#fff"/>
+                  <AntDesign name={"shoppingcart"} size={30} color="#fff"/>
                 </Button>
               </View>
             </Card.Content>
