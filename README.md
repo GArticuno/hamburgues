@@ -4,4 +4,4 @@
  
 Check this:
 
-![alt text](https://github.com/Garticuno/Hamburgues/blob/master/Hamburgues.gif?raw=true)
+![alt text](https://github.com/Garticuno/hamburgues/blob/master/Hamburgues.gif?raw=true)
