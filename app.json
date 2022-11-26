@@ -1,14 +1,15 @@
 {
   "expo": {
-    "name": "hamburgues",
-    "slug": "hamburgues",
+    "name": "hamburgues-ts",
+    "slug": "hamburgues-ts",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#000000"
+      "backgroundColor": "#ffffff"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -23,8 +24,7 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      },
-      "package": "com.moonbeam.hamburgues"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
